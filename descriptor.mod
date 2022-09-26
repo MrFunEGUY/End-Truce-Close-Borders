@@ -4,5 +4,5 @@ tags={
 	"Utilities"
 }
 name="End Truce & Close Borders"
-supported_version="3.2.*"
+supported_version="3.5.*"
 remote_file_id="2493028212"
