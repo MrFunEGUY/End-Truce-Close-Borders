@@ -152,7 +152,7 @@ country_event = {
 			country_event = { id = closeborders.3001 }
 			add_modifier = {
 				modifier = close_borders_broke_truce
-				days = 5400
+				years = 15
 			}
 			every_country = {
 				limit = {
@@ -191,7 +191,7 @@ country_event = {
 			country_event = { id = closeborders.3001 }
 			add_modifier = {
 				modifier = close_borders_broke_truce
-				days = 5400
+				years = 15
 			}
 			every_country = {
 				limit = {
@@ -230,7 +230,7 @@ country_event = {
 			country_event = { id = closeborders.3001 }
 			add_modifier = {
 				modifier = close_borders_broke_truce
-				days = 5400
+				years = 15
 			}
 			every_country = {
 				limit = {
@@ -269,7 +269,7 @@ country_event = {
 			country_event = { id = closeborders.3001 }
 			add_modifier = {
 				modifier = close_borders_broke_truce
-				days = 5400
+				years = 15
 			}
 			every_country = {
 				limit = {
@@ -308,7 +308,7 @@ country_event = {
 			country_event = { id = closeborders.3001 }
 			add_modifier = {
 				modifier = close_borders_broke_truce
-				days = 5400
+				years = 15
 			}
 			every_country = {
 				limit = {
@@ -347,7 +347,7 @@ country_event = {
 			country_event = { id = closeborders.3001 }
 			add_modifier = {
 				modifier = close_borders_broke_truce
-				days = 5400
+				years = 15
 			}
 			every_country = {
 				limit = {
@@ -386,7 +386,7 @@ country_event = {
 			country_event = { id = closeborders.3001 }
 			add_modifier = {
 				modifier = close_borders_broke_truce
-				days = 5400
+				years = 15
 			}
 			every_country = {
 				limit = {
@@ -425,7 +425,7 @@ country_event = {
 			country_event = { id = closeborders.3001 }
 			add_modifier = {
 				modifier = close_borders_broke_truce
-				days = 5400
+				years = 15
 			}
 			every_country = {
 				limit = {
@@ -464,7 +464,7 @@ country_event = {
 			country_event = { id = closeborders.3001 }
 			add_modifier = {
 				modifier = close_borders_broke_truce
-				days = 5400
+				years = 15
 			}
 			every_country = {
 				limit = {
@@ -504,7 +504,7 @@ country_event = {
 			country_event = { id = closeborders.3001 }
 			add_modifier = {
 				modifier = close_borders_broke_truce
-				days = 5400
+				years = 15
 			}
 			every_country = {
 				limit = {
@@ -532,19 +532,18 @@ country_event = {
 	is_triggered_only = yes
 
 	immediate = { 
-		event_target:chosen_truce_country = {
-			end_truce = root
-			set_closed_borders = {
-				who = root
-				status = yes
-				forced = 0
-			}
-		}
 		end_truce = event_target:chosen_truce_country
 		set_closed_borders = {
 			who = event_target:chosen_truce_country
 			status = yes
 			forced = 0
+		}
+		event_target:chosen_truce_country = {
+			set_closed_borders = {
+				who = root
+				status = yes
+				forced = 0
+			}
 		}
 	}
 }
