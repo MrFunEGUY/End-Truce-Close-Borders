@@ -50,9 +50,11 @@ I overwrite action.44 in events/on_action_events.txt.
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2949463581]- Ethics and Civics Alternative - FunEFork[/url]
 
-[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2183551683]- Vassals Expanded and Reworked - FunEFork[/url]
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2956036384]- Galactic Bank - FunEFork[/url]
 
 [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2177145527]- Intervene: Help Friendly Nations - FunEFork[/url]
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/?id=2183551683]- Vassals Expanded and Reworked - FunEFork[/url]
 
 [hr][/hr]
 
