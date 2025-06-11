@@ -1,0 +1,37 @@
+allow = {
+	custom_tooltip = {
+		fail_text = influencefail_text_close_borders
+		has_resource = { type = influence amount >= 150 }
+	}
+}
+add_resource = { influence = -150 }
+name = closeborders.2000.truce_country_$NUM$
+trigger = { check_variable = { which = total_truce_countries value >= $NUM$ } }
+hidden_effect = {
+	event_target:truce_country_$NUM$ = {
+		add_opinion_modifier = {
+			who = root
+			modifier = opinion_closed_borders_broke_truce
+		}
+		save_event_target_as = chosen_truce_country
+	}
+	country_event = { id = closeborders.3001 }
+	add_modifier = {
+		modifier = close_borders_broke_truce
+		years = 15
+	}
+	every_country = {
+		limit = {
+			NOR = {
+				is_same_value = event_target:chosen_truce_country
+				is_same_value = root
+			}
+			has_communications = root
+			has_communications = event_target:chosen_truce_country
+		}
+		add_opinion_modifier = {
+			modifier = opinion_closed_borders_broke_truce_foreign
+			who = root
+		}
+	}
+}

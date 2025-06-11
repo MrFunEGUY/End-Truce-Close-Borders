@@ -1,0 +1,6 @@
+limit = { check_variable = { which = total_truce_countries value >= $NUM$ } }
+random_country = {
+	limit = { has_country_flag = truce_country }
+	remove_country_flag = truce_country
+	save_event_target_as = truce_country_$NUM$
+}
